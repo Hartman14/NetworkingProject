@@ -1,0 +1,11 @@
+//Still working on//
+
+-Objects arent tied to a specific gps location yet, still kinda just overlay on the camera.
+
+-in the future with the AR goggles, will probably have to make the camera transparent since we wouldnt
+want a camera image on top of the glasses lense.
+
+-got gyroscope functioning when you run it on an andriod device. Also can still move player around on PC like 
+the original example put up. Player can only look around while running it on an andriod device.
+
+-made some basic sprites for a HUD, you guys can change that if you want.
