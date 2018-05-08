@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="CP1Back-Up" size="30.000000 30.000000" />
+    <ImageTarget name="CheckPoint3" size="30.000000 40.000000" />
+    <ImageTarget name="CheckPoint2" size="30.000000 40.000000" />
+    <ImageTarget name="CheckPoint1" size="30.000000 21.428572" />
     <ImageTarget name="image1" size="30.000000 40.000000" />
     <ImageTarget name="MDARP" size="30.000000 50.689655" />
     <ImageTarget name="TBTPBasic" size="30.000000 27.102804" />

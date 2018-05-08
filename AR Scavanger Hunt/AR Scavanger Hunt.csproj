@@ -303,6 +303,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\CheckPointController.cs" />
+    <Compile Include="Assets\PlayerProgress.cs" />
     <Compile Include="Assets\Scripts\arCamScript.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\CapturedExample.cs" />
