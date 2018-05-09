@@ -4,12 +4,68 @@ using UnityEngine;
 
 public class ScoreboardManager : MonoBehaviour {
 
-    
-    
+    private string LeadPlayer;
+    private string checkpointAt;
 
-    void OnEnable()
+
+    private void Start()
     {
-        //retrieves an array of players
-        //GameObject.FindGameObjectsWithTag("Player").CopyTo(players, 0);
+        LeadPlayer = "Tied";
+        checkpointAt = "1";
+    }
+
+    void Update()
+    {
+        try
+        {
+            GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+
+            for (int i = 0; i < players.Length; i++)
+            {
+                if (players[i].GetComponent<PlayerProgress>().returnCheckpointProgress() > getCP(checkpointAt))
+                {
+                    LeadPlayer = players[i].name;
+                    checkpointAt = players[i].GetComponent<PlayerProgress>().returnCheckpointProgress().ToString();
+                }
+                else if (players[i].GetComponent<PlayerProgress>().returnCheckpointProgress() == getCP(checkpointAt))
+                {
+                    LeadPlayer = "tied";
+                }
+            }
+        }
+        catch
+        {
+            Debug.Log("Empty Network");
+        }
+    }
+
+
+    public string sendLeadPlayerName()
+    {
+        return LeadPlayer;
+    }
+
+    public string sendLeadPlayerCheckpoint()
+    {
+        return checkpointAt;
+    }
+
+
+    private int getCP(string input)
+    {
+        if(input == "2")
+        {
+            return 2;
+        }
+        else if(input == "3")
+        {
+            return 3;
+        }
+        
+        else
+        {
+            return 1;
+        }
+
     }
 }

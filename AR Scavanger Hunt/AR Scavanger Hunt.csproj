@@ -306,6 +306,7 @@
     <Compile Include="Assets\CheckPointController.cs" />
     <Compile Include="Assets\ClueHandler.cs" />
     <Compile Include="Assets\PlayerProgress.cs" />
+    <Compile Include="Assets\pullScore.cs" />
     <Compile Include="Assets\ScoreboardManager.cs" />
     <Compile Include="Assets\Scripts\arCamScript.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
