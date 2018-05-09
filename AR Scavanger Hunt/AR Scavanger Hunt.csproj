@@ -304,7 +304,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\CheckPointController.cs" />
+    <Compile Include="Assets\ClueHandler.cs" />
     <Compile Include="Assets\PlayerProgress.cs" />
+    <Compile Include="Assets\ScoreboardManager.cs" />
     <Compile Include="Assets\Scripts\arCamScript.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\CapturedExample.cs" />
@@ -312,6 +314,8 @@
     <Compile Include="Assets\Scripts\gyroControls.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
     <Compile Include="Assets\Scripts\UpdateGPSText.cs" />
+    <Compile Include="Assets\TouchReciever.cs" />
+    <Compile Include="Assets\UserTouchScreen.cs" />
     <Compile Include="Assets\Vuforia\Scripts\DefaultInitializationErrorHandler.cs" />
     <Compile Include="Assets\Vuforia\Scripts\DefaultTrackableEventHandler.cs" />
   </ItemGroup>

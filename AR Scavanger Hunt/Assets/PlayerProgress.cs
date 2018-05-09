@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class PlayerProgress : MonoBehaviour {
 
-    public int currentCheckpoint;
+    private int currentCheckpoint;
+    private int currentClue;
+    public GameObject PlayerUI;
 
     // Use this for initialization
     void Start () {
-        currentCheckpoint = 1;
+        setStart();
 	}
 	
 	// Update is called once per frame
@@ -17,10 +19,28 @@ public class PlayerProgress : MonoBehaviour {
 	}
 
 
-    //Sets the checkpoints to hidden,  initiates first checkpoint
+    //Sets Checkpoint value to
     private void setStart()
     {
+        currentCheckpoint = 1;
+        currentClue = 1;
+    }
 
+    //checks variable progress (includes checkpoint, and clue status)
+    private void playerProgress()
+    {
+        //currentClue = PlayerUI.GetComponents<ClueHandler>().CurrentClue();
+    }
+
+    public int returnClueProgress()
+    {
+        return currentClue;
+    }
+
+
+    public int returnCheckpointProgress()
+    {
+        return currentCheckpoint;
     }
 
 }
